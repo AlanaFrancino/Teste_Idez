@@ -1,5 +1,18 @@
 <?php
-
+/**
+ * @OA\Info(
+ *     title="Teste Idez",
+ *     version="1.0.0",
+ *     description="Projeto para teste",
+ *     @OA\Contact(
+ *         email="alana_francino@hotmail.com"
+ *     ),
+ *     @OA\License(
+ *         name="MIT",
+ *         url="https://opensource.org/licenses/MIT"
+ *     )
+ * )
+ */
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +30,4 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+

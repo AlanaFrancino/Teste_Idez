@@ -1,4 +1,18 @@
 <?php
+/**
+ * @OA\Info(
+ *     title="Teste Idez",
+ *     version="1.0.0",
+ *     description="Projeto para teste",
+ *     @OA\Contact(
+ *         email="alana_francino@hotmail.com"
+ *     ),
+ *     @OA\License(
+ *         name="MIT",
+ *         url="https://opensource.org/licenses/MIT"
+ *     )
+ * )
+ */
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MunicipiosController;
