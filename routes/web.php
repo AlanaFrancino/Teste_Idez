@@ -28,9 +28,9 @@ use App\Http\Controllers\MunicipiosController;
 |
 */
 
+Route::get('/', [MunicipiosController::class, 'Index']);
 
 Route::get('/municipios/{uf}', [MunicipiosController::class, 'municipiosPorUf']);
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/municipiosList', [MunicipiosController::class, 'listarMunicipiosPaginados'])->name('municipios.paginados');
+
