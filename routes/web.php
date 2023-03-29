@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\MunicipiosController;
+    
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+
+Route::get('/municipios/{uf}', [MunicipiosController::class, 'municipiosPorUf']);
 
 Route::get('/', function () {
     return view('welcome');
